@@ -38,4 +38,4 @@ python extract.py --out-fname out.jpg PXL_20230324_025235345.jpg
 
 | Input                                      | Output                     |
 | ------------------------------------------ | -------------------------- |
-| ![input-img](./PXL_20230324_025235345.jpg) | ~[output-image](./out.jpg) |
+| ![input-img](./PXL_20230324_025235345.jpg) | ![output-image](./out.jpg) |
