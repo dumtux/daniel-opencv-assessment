@@ -5,8 +5,10 @@ Using the test photo here, write a Python 3 script that uses OpenCV to automatic
 
 ## Quickstart
 
+Tested with Python 3.10 on Ubuntu 22.04
+
 ```
-python3 -m venv venv
+python3.10 -m venv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
 python spike.py
