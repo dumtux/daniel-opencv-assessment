@@ -33,3 +33,9 @@ Example usage is like this.
 ```sh
 python extract.py --out-fname out.jpg PXL_20230324_025235345.jpg
 ```
+
+## Result
+
+| Input                                      | Output                     |
+| ------------------------------------------ | -------------------------- |
+| ![input-img](./PXL_20230324_025235345.jpg) | ~[output-image](./out.jpg) |
