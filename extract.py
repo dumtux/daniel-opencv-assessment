@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import typer
 
 
 def find_area(img, color_lower, color_upper):
@@ -23,19 +24,23 @@ def find_area(img, color_lower, color_upper):
     return img, extracted_img
 
 
-if __name__=="__main__":
-    fname = 'PXL_20230324_025235345.jpg'
+def main(input_fname: str, out_fname: str='extracted_img.jpg'):
+    # fname = 'PXL_20230324_025235345.jpg'
     green_lower = np.array([45, 100, 50])
     green_upper = np.array([75, 255, 255])
 
-    img = cv2.imread(fname)
+    img = cv2.imread(input_fname)
 
     img, extracted_img = find_area(img, green_lower, green_upper)
     cv2.imshow('original with boundary', img)
     cv2.imshow('extracted', extracted_img)
 
     # Save the new image containing only the green screen
-    cv2.imwrite('extracted_img.jpg', extracted_img)
+    cv2.imwrite(out_fname, extracted_img)
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+
+if __name__ == "__main__":
+    typer.run(main)

@@ -11,5 +11,5 @@ Tested with Python 3.10 on Ubuntu 22.04
 python3.10 -m venv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
-python spike.py
+python extract.py
 ```
